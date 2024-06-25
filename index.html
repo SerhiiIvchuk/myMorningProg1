@@ -44,10 +44,21 @@
 		 }
 		 .order-block {
              background-color: yellow;
+             border: 1px solid black;
+             overflow: hidden;
+		 }
+		 .food-order-image {
+              display: block;
+              border: 2px solid red;
+		 }
+		 .food-order-button {
+            display: block;
+            margin: -50px auto 0;
 		 }
 		 .food-list {
              background-color: blue;
 		 }
+
 	</style>
 	<title>Document</title>
 </head>
@@ -71,7 +82,10 @@
 	  </header>
 	  <main class="main-block inline">
 	  	    <div class="food-zone-title">Place for title</div>
-	  	    <div class="order-block">Place for image+button</div>
+	  	    <div class="order-block">
+	  	    	      <img src="dish.svg" alt="" class="food-order-image">
+	  	    	      <button type="button" class="food-order-button">$20 -- order now</button>
+	  	    </div>
 	  	    <div class="food-list">Food list</div>
 	  </main>
 </body>
